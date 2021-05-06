@@ -1,0 +1,30 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+
+    &__inner {
+        align-items: center;
+        padding: 15px 0;
+        border-bottom: 1px solid $white;
+    }
+
+    &__logo {
+        grid-column: 2 span;
+        font-weight: 700;
+        font-size: 30px;
+        color: $white;
+    }
+
+    &__right {
+        grid-column: 10 span;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__cart {
+        margin-left: 40px;
+    }
+}

@@ -1,0 +1,155 @@
+.catalog {
+    padding: 60px 0;
+    &__inner {
+    }
+
+    &__title {
+    }
+
+    &__content {
+    }
+
+    &__left {
+        grid-column: 3 span;
+    }
+
+    &__filters {
+        background-color: $sec-bg;
+        padding: 20px;
+        border-radius: 4px;
+    }
+
+    &__subtitle {
+        margin-bottom: 20px;
+        font-size: 24px;
+        font-weight: 400;
+        width: 50px;
+    }
+
+    &__prop {
+        margin-bottom: 20px;
+    }
+
+    &__input {
+        background: transparent;
+    }
+
+    &__caption {
+        font-weight: 400;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+
+    &__prop-inner {
+        color: $dark;
+    }
+
+    &__btns {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__reset {
+        margin: 20px auto 0;
+        display: block;
+    }
+
+    &__grid {
+        grid-column: 9 span;
+        grid-template-columns: repeat(9, 1fr);
+    }
+
+    &__more {
+        display: block;
+        margin: 40px auto 0;
+    }
+}
+
+.catalog-price {
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            top: 8px;
+            width: 1px;
+            height: 34px;
+            background-color: $dark;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__input {
+        border: 1px solid $dark;
+        width: 50%;
+        height: 50px;
+        background: transparent;
+        text-align: center;
+
+        &:first-child {
+            border-right: none;
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+        }
+        &:last-child {
+            border-left: none;
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+        }
+    }
+
+    .noUi-horizontal {
+        height: 2px;
+    }
+
+    .noUi-target {
+        border-radius: 0;
+        border: none;
+        background-color: $dark;
+    }
+
+    .noUi-connects {
+        background-color: $dark;
+    }
+    .noUi-connect {
+        background-color: $dark;
+    }
+
+    .noUi-horizontal .noUi-handle {
+        top: -8px;
+        width: 3px;
+        height: 18px;
+    }
+
+    .noUi-handle {
+        border: none;
+        border-radius: 100px;
+        background: $dark;
+        cursor: pointer;
+        box-shadow: none;
+    }
+
+    .noUi-handle::after,
+    .noUi-handle::before {
+        display: none;
+    }
+
+    .noUi-handle {
+        right: 0;
+    }
+
+    .noUi-handle-lower {
+        right: -3px;
+    }
+}
+
+.catalog-list {
+    grid-template-columns: repeat(9, 1fr);
+    &__item {
+        grid-column: 3 span;
+    }
+}

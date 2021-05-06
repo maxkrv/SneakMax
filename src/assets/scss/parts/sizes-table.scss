@@ -1,0 +1,17 @@
+.sizes-table {
+    width: 100%;
+    border-collapse: collapse;
+
+    caption {
+        position: absolute;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    td {
+        border: 2px solid #DBBBA9;
+        padding: 13px 5px;
+        text-align: center;
+        color: $dark;
+    }
+}

@@ -1,0 +1,30 @@
+.cart {
+    position: relative;
+    &__button {
+        width: 20px;
+        height: 20px;
+    }
+
+    &__img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        fill: #fff;
+    }
+
+    &__count {
+        position: absolute;
+        bottom: -3px;
+        right: -4px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $accent;
+        height: 16px;
+        min-width: 16px;
+        color: $white;
+        font-size: 14px;
+        border-radius: 50%;
+    }
+}

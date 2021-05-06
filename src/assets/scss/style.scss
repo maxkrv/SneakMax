@@ -1,0 +1,38 @@
+@import "mixins";
+@import "reset";
+@import "fonts";
+@import "vars";
+
+body {
+    font-family: $font;
+    font-weight: 400;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1210px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+}
+
+// vendor
+@import "../../../node_modules/nouislider/dist/nouislider.min.css";
+
+//parts
+@import "parts/nav";
+@import "parts/cart";
+@import "parts/button";
+@import "parts/products";
+@import "parts/sizes-table";
+@import "parts/section";
+
+//blocks
+@import "blocks/header";
+@import "blocks/intro";
+@import "blocks/footer";
+@import "blocks/catalog";

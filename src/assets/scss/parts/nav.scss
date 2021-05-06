@@ -1,0 +1,32 @@
+.nav {
+
+    &__list {
+        display: flex;
+        align-items: center;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: 40px;
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            height: 1px;
+            width: 100%;
+            background-color: $white;
+            width: 0;
+            transition: width cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s;
+        }
+
+        &:hover::after {
+            width: 100%;
+        }
+    }
+
+    &__link {
+        font-size: 14px;
+        color: $white;
+    }
+}
