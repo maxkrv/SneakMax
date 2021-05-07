@@ -1,13 +1,5 @@
 .catalog {
     padding: 60px 0;
-    &__inner {
-    }
-
-    &__title {
-    }
-
-    &__content {
-    }
 
     &__left {
         grid-column: 3 span;
@@ -52,6 +44,7 @@
     &__reset {
         margin: 20px auto 0;
         display: block;
+        color: $dark;
     }
 
     &__grid {
